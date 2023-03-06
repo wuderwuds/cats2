@@ -105,14 +105,14 @@ const showAllCats = async () => {
     const errorMessage = document.createElement('p')
     errorMessage.classList.add('error-msg')
     errorMessage.innerText = 'Произошла ошибка, попробуйте позже'
-    $wrapper.appendChild(errorMessage)
+    return $wrapper.appendChild(errorMessage)
   }
    
   const data = await res.json();
   if (data.length===0) {   
     const notificationMessage = document.createElement('p')
     notificationMessage.innerText = 'Список котов пуст, добавьте новых котов'
-    $wrapper.appendChild(notificationMessage)
+    return $wrapper.appendChild(notificationMessage)
   }
   
   data.forEach(cat => {
