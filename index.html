@@ -25,12 +25,6 @@
     <button type="button" data-add_button class="btn btn-success">Add Cat</button>
     </div>
 
- <!-- "name": "Имя кот59696gjffjfjf9ика",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOQUQ4vJLyAM14QgiCFjEon1BCRoJ_RTqXYA&usqp=CAU",
-    "age": 0,
-    "rate": 0,
-    "favorite": false,
-    "description": "" -->
   
 <div data-modal class="modal-wrapper hidden">
 <div class="custom-modal">
@@ -66,27 +60,46 @@
 </div>
 
 
+
+<div data-edit class="modal-wrapper hidden-edit">
+    <div class="custom-modal" data_form_edit>
+    <h8 class="modal-title">Edit Cat</h8>
+    <button type="button" class="btn-close" data-model_edit aria-label="Close"></button>
+    <form name="cats_edit">
+     
+        <div class="mb-3">
+         <input name="name"  type="text" placeholder="add name" class="form-control" >
+         </div>
+        <div class="mb-3">
+         <input name="image" type="text" placeholder="add url image" class="form-control" >
+         </div>
+        <div class="mb-3">
+         <input name="age"  type="number" placeholder="add age" class="form-control" >
+         </div>
+        <div class="mb-3">
+         <input name="rate"  type="number" placeholder="add rate 0-10" min="0" max="10" class="form-control" >
+         </div>
+        <div class="mb-3">
+            <textarea name="description" rows="3" placeholder="add a comment" class="form-control"></textarea>
+         </div>
+         <p class="error=msg" data-errmsg-edit></p>
+        
+        <div class="mb-3 form-check">
+          <input name="favorite" type="checkbox" class="form-check-input" id="exampleCheck2">
+          <label class="form-check-label" for="exampleCheck2">Favorite</label>
+        </div>
+        <button data-submut_edit type="submit" class="btn btn-primary send">Submit</button>
+      </form>      
+    </div>
+    </div>
+
+
         <div data-wr class="datawr">
         </div>
 
         <div data-info class="data-info hidden-info">
             
-            <!-- <div  class="card" style="width: 18rem;">
-                <div class="modal-header">
-                    <h8 class="modal-title p-2">Info Cat</h8>
-                    <button type="button"  class="btn-close p-2" data-action="close"></button>
-                  </div>
-              <img src="" class="card-img-top" alt="...">
-              <div class="card-body">
-              <h5 class="card-title" data-name_info></h5>
-              <h5 class="card-title">Age  title</h5>
-              <h5 class="card-title">Rate title</h5>
-              <p class="card-text">
-              </p>
-              <button type="button"  data-action="update" class="btn btn-primary">Update</button>
-              </div>
-              </div> -->
-            </div>
+        </div>
           </div> 
 
     

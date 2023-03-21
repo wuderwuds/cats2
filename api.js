@@ -16,8 +16,12 @@ addNewCat(data) {
       body: JSON.stringify(data)  
     })
 }
-getUpdateCat(id) {
-    return fetch(`${this.url}/update/${id}`)
+getUpdateCat(id, data) {
+    return fetch(`${this.url}/update/${id}`, {
+        method: 'PUT', 
+        headers: {'Content-type': 'application/json'},
+        body: JSON.stringify(data)  
+      })
 }
 deleteCat(id) {
     return fetch(`${this.url}/delete/${id}`, {method: 'DELETE'})
