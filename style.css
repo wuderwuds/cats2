@@ -1,0 +1,113 @@
+/*.card:hover {
+    z-index: 2;
+    
+    transform: scale(2);
+    margin-top: 50px;
+    
+  }
+  */
+
+
+   
+  
+/* .container {
+  background-color: aqua;
+
+ }
+ */
+
+.qwe {
+   background-color: darkcyan;
+ 
+   
+}
+
+  .card-img-top {
+    width: 230px;
+    height: 180px;
+ }
+
+ .modal-wrapper {
+display: flex;
+justify-content: center;
+align-items: start;
+height: 100%;
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+
+
+overflow-y: auto;
+background: rgb(0, 0, 0, 0.3);
+backdrop-filter: 2px;
+z-index: 3;
+ }
+ .custom-modal {
+   
+ 
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    padding:30px 20px 20px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+ }
+
+ .hidden {
+    display: none;
+ }
+ .btn-close {
+position: absolute;
+top: 2px;
+right: 2px;
+ }
+ .send {
+    width: 100%;
+ }
+
+ .error-msg {
+   color: brown;
+ }
+ input[data-id] {
+   display: none;
+ }
+ div[data-wr] {
+    width: max-content;
+   display: grid;
+   margin-left: -50px;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-gap: 20px;
+   
+  
+ }
+ .data-info {
+   display: flex;
+   justify-content: center;
+   align-items: start;
+   height: 100%;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   
+   
+   overflow-y: auto;
+   background: rgb(0, 0, 0, 0.3);
+   backdrop-filter: 2px;
+   z-index: 3;
+
+ }
+ .hidden-info {
+   display: none;
+ }
+ .hidden-edit {
+   display: none;
+ }
+ .fa-heart {
+   color: red;
+ }
